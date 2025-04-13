@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал - Виртуальный стилист для школьников</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.svg" alt="Логотип">
+                <span>Виртуальный стилист</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html" class="active">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero journal-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Журнал стиля</h1>
+                    <p>Актуальные статьи, советы и вдохновение для создания своего уникального образа</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal-content">
+            <div class="container">
+                <div class="journal-filters">
+                    <button class="filter-btn active">Все статьи</button>
+                    <button class="filter-btn">Стиль</button>
+                    <button class="filter-btn">Мода</button>
+                    <button class="filter-btn">Образование</button>
+                </div>
+
+                <div class="journal-grid">
+                    <article class="journal-post">
+                        <div class="post-image">
+                            <img src="images/journal/style-basics.jpg" alt="Основы стиля">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">15 марта 2024</span>
+                                <span class="post-category">Стиль</span>
+                            </div>
+                            <h2>Основы стиля для школьников</h2>
+                            <p>Как создать базовый гардероб, который будет актуален в любой ситуации</p>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="journal-post">
+                        <div class="post-image">
+                            <img src="images/journal/color-guide.jpg" alt="Цветовой гид">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">10 марта 2024</span>
+                                <span class="post-category">Мода</span>
+                            </div>
+                            <h2>Цветовой гид: как подобрать цвета под свой тип внешности</h2>
+                            <p>Практическое руководство по выбору цветов в одежде</p>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+
+                    <article class="journal-post">
+                        <div class="post-image">
+                            <img src="images/journal/confidence.jpg" alt="Уверенность в себе">
+                        </div>
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">5 марта 2024</span>
+                                <span class="post-category">Образование</span>
+                            </div>
+                            <h2>Как стиль влияет на уверенность в себе</h2>
+                            <p>Исследование взаимосвязи между внешним видом и внутренним состоянием</p>
+                            <a href="#" class="read-more">Читать далее <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Подпишитесь на нашу рассылку</h2>
+                    <p>Получайте свежие статьи и советы по стилю прямо на почту</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="Логотип">
+                    <p>Виртуальный стилист для школьников</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="team.html">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ресурсы</h4>
+                        <ul>
+                            <li><a href="journal.html">Журнал</a></li>
+                            <li><a href="resources.html">Материалы</a></li>
+                            <li><a href="#demo">Демо</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="mailto:info@virtual-stylist.ru">info@virtual-stylist.ru</a></li>
+                            <li><a href="tel:+7XXX">+7 (XXX) XXX-XX-XX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Виртуальный стилист для школьников. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

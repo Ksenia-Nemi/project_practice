@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал - Виртуальный стилист для школьников</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Логотип">
+                <span>Виртуальный стилист</span>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О проекте</a></li>
+                    <li><a href="team.html">Команда</a></li>
+                    <li><a href="journal.html" class="active">Журнал</a></li>
+                    <li><a href="resources.html">Ресурсы</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero journal-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Журнал проекта</h1>
+                    <p>Актуальные информация о нашем развитии</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="journal-content">
+            <div class="container">
+                <div class="journal-filters">
+                    <button class="filter-btn active">Все статьи</button>
+                </div>
+
+                <div class="journal-grid">
+                    <article class="journal-post">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">10 апреля 2025</span>
+                            </div>
+                            <h2> Разработка базового прототипа и нейросетевого ядра</h2>
+                            <p>Мы успешно завершили этап разработки прототипа, который стал основой для работы нашего виртуального стилиста. В рамках данного этапа была создана и настроена нейросетевая модель, способная анализировать модные тенденции и соотносить их с требованиями устава школы. Особое внимание уделялось алгоритмам обработки изображений и текстовой информации, чтобы платформа могла корректно адаптировать рекомендации под конкретные параметры учеников. Кроме того, проведены многочисленные внутренние тестирования, результатом которых стали улучшенные функции предварительной оценки стиля и подбор соответствующего гардероба с учетом школьных правил.</p>
+                        </div>
+                    </article>
+
+                    <article class="journal-post">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">18 марта 2025</span>
+                            </div>
+                            <h2>Интеграция дополнительных модулей и функционала для персонализации</h2>
+                            <p>На данном этапе в проект был интегрирован новый модуль персонализации, позволяющий учитывать индивидуальные особенности каждого пользователя. Мы добавили возможность настройки профиля, где каждый школьник может указать свои предпочтения, размеры и любимые цвета, что значительно повышает точность рекомендаций стилиста. Новый функционал также включает алгоритмы машинного обучения, позволяющие анализировать историю выбора одежды и адаптировать предложения согласно трендам и школьному дресс-коду. Помимо этого, проведены первые этапы интеграции с внешними базами данных, что позволит в будущем расширить ассортимент предлагаемых образов и аксессуаров.</p>
+                        </div>
+                    </article>
+
+                    <article class="journal-post">
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-date">25 марта 2025</span>
+                            </div>
+                            <h2> Завершение тестирования интерфейса и начало бета-тестирования с участием школы</h2>
+                            <p>Мы завершили основной цикл тестирования интерфейса, уделив внимание как функциональной, так и эстетической составляющей платформы. Проводились регулярные сессии с участием представителей педагогического состава и учеников, благодаря которым были выявлены и устранены недочеты в дизайне и логике работы сайта. В результате доработка интерфейса позволила сделать его интуитивно понятным, удобным для пользователей любого возраста и максимально соответствующим школьному дресс-коду. Начат этап бета-тестирования, где избранные пользователи активно взаимодействуют с системой, предоставляя ценные отзывы для дальнейшего совершенствования проекта.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pagination">
+                    <button class="pagination-btn active">1</button>
+                    <button class="pagination-btn">2</button>
+                    <button class="pagination-btn">3</button>
+                    <button class="pagination-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Подпишитесь на нашу рассылку</h2>
+                    <p>Получайте свежие статьи и советы по стилю прямо на почту</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Ваш email" required>
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Логотип">
+                    <p>Виртуальный стилист для школьников</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="about.html">О проекте</a></li>
+                            <li><a href="team.html">Команда</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ресурсы</h4>
+                        <ul>
+                            <li><a href="journal.html">Журнал</a></li>
+                            <li><a href="resources.html">Материалы</a></li>
+                            <li><a href="#demo">Демо</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><a href="mailto:info@virtual-stylist.ru">info@virtual-stylist.ru</a></li>
+                            <li><a href="tel:+7XXX">+7 (XXX) XXX-XX-XX</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Виртуальный стилист для школьников. Все права защищены.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-vk"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
