@@ -76,7 +76,6 @@ Flask-приложение с маршрутами /upload и /recommend.
 
 Установка Node.js и npm
 
-На Ubuntu/Debian
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
@@ -113,33 +112,51 @@ client/
 Пример компонента загрузки фото
 
 // src/components/UploadForm.js
+
 import React, { useState } from 'react';
+
 import axios from 'axios';
 
 export default function UploadForm({ onResult }) {
+
 const [file, setFile] = useState(null);
 
 const handleSubmit = async e => {
+
 e.preventDefault();
+
 const formData = new FormData();
+
 formData.append('image', file);
+
 const response = await axios.post('/api/upload', formData, {
+
 headers: {'Content-Type': 'multipart/form-data'}
+
 });
+
 onResult(response.data);
+
 };
 
 return (
+
 <form onSubmit={handleSubmit}>
+
 <input type="file" accept="image/*" onChange={e => setFile(e.target.files[0])} />
+
 <button type="submit">Загрузить</button>
+
 </form>
+
 );
+
 }
 
 4.3. Инициализация серверной части (Flask)
 
 cd ../server
+
 pip install flask flask-cors tensorflow pillow psycopg2-binary
 
 Структура проекта server/:
